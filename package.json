@@ -7,16 +7,12 @@
     "test": "mocha",
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
-    "build": "next build",
-    "postinstall": "node ethereum/compile.js",
-    "heroku-postbuild": "next build"
+    "build": "next build"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "fs": "0.0.1-security",
     "fs-extra": "^9.0.0",
     "ganache-cli": "^6.9.1",
     "mocha": "^7.1.1",
