@@ -29,5 +29,8 @@
     "solc": "^0.6.5",
     "truffle-hdwallet-provider": "0.0.3",
     "web3": "^1.2.6"
+  },
+  "engines": {
+    "node": "12.14.x"
   }
 }
