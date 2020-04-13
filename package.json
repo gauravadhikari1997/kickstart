@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "dev": "node server.js",
-    "start": "next start -p $PORT",
+    "start": "NODE_ENV=production node server.js",
     "build": "next build",
     "postinstall": "node ethereum/compile.js",
     "heroku-postbuild": "next build"
