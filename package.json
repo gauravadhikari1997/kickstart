@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start -p $PORT",
     "build": "next build"
   },
   "author": "",
