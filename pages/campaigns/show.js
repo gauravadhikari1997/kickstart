@@ -34,7 +34,7 @@ class CampaignShow extends Component {
         header: manager,
         meta: "Address of Manager",
         description:
-          "The Manager created this campaign and can create requests to withdraw money.",
+          "The Manager who created this campaign, Manager can create requests to withdraw money.",
         style: { overflowWrap: "break-word" }
       },
       {
@@ -47,7 +47,7 @@ class CampaignShow extends Component {
         header: requestCount,
         meta: "Number of requests",
         description:
-          "A request tries to withdraw money from the contract. Requests must be approved by approvers"
+          "A request tries to withdraw money from the contract. Requests must be approved by approvers( or contributers)"
       },
       {
         header: approversCount,
@@ -57,7 +57,7 @@ class CampaignShow extends Component {
       },
       {
         header: web3.utils.fromWei(balance, "ether"),
-        meta: "Campain Balance (ethers)",
+        meta: "Campaign Balance (ethers)",
         description: "The balance is how much money this campaign has to spend."
       }
     ];
@@ -67,11 +67,13 @@ class CampaignShow extends Component {
   render() {
     return (
       <Layout>
-        <h1>CampaignShow</h1>
+        <h1>Campaign Details</h1>
         <Grid>
           <Grid.Row>
-            <Grid.Column width={10}>{this.renderCards()}</Grid.Column>
-            <Grid.Column width={6}>
+            <Grid.Column width={10} mobile={9}>
+              {this.renderCards()}
+            </Grid.Column>
+            <Grid.Column width={6} mobile={5}>
               <ContributeForm address={this.props.address} />
             </Grid.Column>
           </Grid.Row>

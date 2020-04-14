@@ -38,6 +38,7 @@ class CampaignIndex extends Component {
                 content="Create Campaign"
                 icon="add"
                 primary
+                style={{ marginLeft: 20 }}
               />
             </a>
           </Link>
