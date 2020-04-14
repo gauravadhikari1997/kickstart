@@ -26,7 +26,7 @@ class RequestRow extends Component {
     return (
       <Table.Row
         disabled={request.complete}
-        postive={!!readyToFinalize && !request.complete}
+        positive={!!readyToFinalize && !request.complete}
       >
         <Table.Cell>{id}</Table.Cell>
         <Table.Cell>{request.description}</Table.Cell>

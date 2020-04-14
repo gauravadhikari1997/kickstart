@@ -38,6 +38,9 @@ class RequestsIndex extends Component {
   render() {
     return (
       <Layout>
+        <Link route={`/campaigns/${this.props.address}`}>
+          <a>Back</a>
+        </Link>
         <h3>Requests</h3>
         <Link route={`/campaigns/${this.props.address}/requests/new`}>
           <a>
