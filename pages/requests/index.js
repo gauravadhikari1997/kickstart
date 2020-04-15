@@ -26,6 +26,7 @@ class RequestsIndex extends Component {
     return this.props.requests.map((request, index) => {
       return (
         <RequestRow
+          onRequestsUpdate={this.onRequestsUpdate}
           request={request}
           key={index}
           id={index}
@@ -49,6 +50,15 @@ class RequestsIndex extends Component {
             </Button>
           </a>
         </Link>
+
+        <Link route={`/campaigns/${this.props.address}/requests/`}>
+          <a>
+            <Button primary floated="left" style={{ marginBottom: 10 }}>
+              Refresh
+            </Button>
+          </a>
+        </Link>
+
         <Table>
           <Table.Header>
             <Table.Row>
