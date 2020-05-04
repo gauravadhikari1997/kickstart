@@ -11,7 +11,7 @@ class CampaignIndex extends Component {
   }
 
   renderCampaigns() {
-    const items = this.props.campaigns.map(address => {
+    const items = this.props.campaigns.map((address) => {
       return {
         header: address,
         description: (
@@ -20,7 +20,7 @@ class CampaignIndex extends Component {
           </Link>
         ),
         fluid: true,
-        style: { overflowWrap: "break-word" }
+        style: { overflowWrap: "break-word" },
       };
     });
     return <Card.Group items={items} />;
