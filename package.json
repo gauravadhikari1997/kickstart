@@ -17,7 +17,6 @@
     "fs-extra": "^9.0.0",
     "ganache-cli": "^6.9.1",
     "mocha": "^7.1.1",
-    "next": "^4.1.4",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
