@@ -16,7 +16,7 @@
   "dependencies": {
     "fs-extra": "^9.0.0",
     "ganache-cli": "^6.9.1",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "next": "^9.3.6",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
