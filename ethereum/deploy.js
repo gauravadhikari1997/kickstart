@@ -4,7 +4,7 @@ const compiledFactory = require("./build/CampaignFactory.json");
 
 const provider = new HDWalletProvider(
   "wreck method very basket icon skate clarify donate staff forget address wise",
-  "https://rinkeby.infura.io/v3/aaa697ff9b38438585c95dc555c75afa"
+  "https://goerli.infura.io/v3/aaa697ff9b38438585c95dc555c75afa"
 );
 
 const web3 = new Web3(provider);
